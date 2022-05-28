@@ -17,7 +17,7 @@
 function boxValidation($array){
     $row = 0;
     $column = 0;
-    for ($i =1;$i<9;$i++){
+    for ($i =1;$i<10;$i++){
         for ($j=$row;$j<$row + 3;$j++){
             for ($k=$column;$k<$column+3;$k++){
                 $box[] = $array[$j][$k];
@@ -54,5 +54,4 @@ function sudokuValidation($array)
     }
 
     return boxValidation($array);
-    return true;
 }
